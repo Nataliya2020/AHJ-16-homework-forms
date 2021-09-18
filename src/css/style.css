@@ -1,0 +1,98 @@
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+  width: 337px;
+  padding: 11px 24px 11px 13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+}
+
+.popover-container {
+  position: relative;
+  top: -200px;
+}
+
+.popover-tail {
+  margin-bottom: 15px;
+}
+
+.popover-tail::after, .popover-tail::before {
+  content: '';
+  position: absolute;
+  display: block;
+  border-color: transparent;
+  border-style: solid;
+  z-index: 999999;
+}
+
+.popover-tail::before {
+  border-top-color: rgba(0,0,0,.25);
+  border-width: 11px 11px 9px;
+  left: 136px;
+}
+
+.popover-tail::after {
+  border-top-color: #fff;
+  border-width: 10px 10px 0 10px;
+  left: 136px;
+  top: 135px;
+}
+
+.popover {
+  width: 276px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+.popover-container-title {
+  padding: 11px 0 12px 13px;
+ border-bottom: 1px solid #a0a0a0;
+  background-color: #dfdfdf;
+}
+
+.popover-title {
+  margin: 0;
+}
+
+.popover-paragraph {
+  padding-left: 13px;
+  padding-right: 5px;
+}
+
+.forms {
+  width: 238px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  width: 100%;
+  padding: 16px 16px 11px 18px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 20px;
+
+  border: none;
+  outline: none;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 8px;
+}
